@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+
+<body>
+  <div class="container">
+    <h1>Welcome to Movie Recommender</h1>
+    <p>Enter your favorite movie to discover similar ones you may like</p>
+  <input type="text" id="search" placeholder="Enter the movie name..." autocomplete="off" required>
+  <div id="suggestions"></div>
+
+  <div id="result" class="result">
+    <h2>you may like watching these movies... 🍿🎥</h2>
+    <ul id="recommendations"></ul>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</div>
+</body>
+</html>

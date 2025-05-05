@@ -1,0 +1,191 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 30px 40px;
+    text-align: center;
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #1f4037;
+  }
+  
+  .container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #1f4037;
+    box-shadow: 0 0 5px rgba(31, 64, 55, 0.3);
+  }
+  
+  /* Suggestions dropdown */
+  #suggestions {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -1px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+  }
+  
+  #suggestions div {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  #suggestions div:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .result {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .result-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .result h2 {
+    font-size: 1.5rem;
+    color: #1f4037;
+    margin-bottom: 15px;
+  }
+  
+  #recommendations {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #recommendations li {
+    background: #f9f9f9;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    cursor: default;
+  }
+  
+  #recommendations li:hover {
+    transform: scale(1.02);
+    background-color: #b0b8bc; /* 💡 Light blue hover */
+    cursor: pointer;           /* 👉 Change cursor on hover */
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: linear-gradient(to right, #232526, #414345);
+      color: #eee;
+    }
+  
+    .container {
+      background: #2c2c2c;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+  
+    input[type="text"] {
+      background-color: #444;
+      color: #fff;
+      border: 2px solid #555;
+    }
+  
+    input[type="text"]:focus {
+      border-color: #66fcf1;
+      box-shadow: 0 0 6px rgba(102, 252, 241, 0.4);
+    }
+  
+    #suggestions {
+      background: #333;
+      border-color: #555;
+    }
+  
+    #suggestions div:hover {
+      background-color: #444;
+    }
+  
+    .result h2 {
+      color: #66fcf1;
+    }
+  
+    #recommendations li {
+      background: #3a3a3a;
+    }
+  
+    #recommendations li:hover {
+      background-color: #444;
+    }
+
+
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .container h1 {
+      font-size: 1.5rem;
+    }
+  
+    input[type="text"] {
+      font-size: 0.95rem;
+    }
+  }
+  }

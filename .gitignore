@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+#ignoring the artifacts
+/artifacts/*
+
+#ignoring the logs
+/logs/*

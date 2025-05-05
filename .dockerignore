@@ -1,0 +1,12 @@
+artifact
+venv
+env
+.gitignore
+logs
+template.py
+demo.py
+README.md
+Project Flow.txt
+LICENSE
+src.egg.-info
+notebooks
