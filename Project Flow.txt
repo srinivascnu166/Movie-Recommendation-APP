@@ -16,7 +16,7 @@
 6. From "Create a cluster" screen, hit "create", Select M0 service keeping other services as default, hit "create deployment"
 >> Cluster: RecommendationCluster
 7. Setup the username and password and then create DB user.
->> Username:srinivascnu166 Password: rFOyQ9XLN7kOLLyL
+>> Username:xxxxxxx Password: xxxxxx
 8. Go to "network access" and add ip address - "0.0.0.0/0" so that we can access it from anywhere
 9. Go back to project >> "Get Connection String" >> "Drivers" >> {Driver:Python, Version:3.6 or later} 
    >> copy and save the connection string with you(replace password). >> Done.
