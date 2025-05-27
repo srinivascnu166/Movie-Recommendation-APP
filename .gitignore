@@ -178,3 +178,6 @@ cython_debug/
 
 #ignoring the logs
 /logs/*
+
+projectflow.txt
+crashcourse.txt
